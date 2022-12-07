@@ -115,4 +115,13 @@ body .layout .part-2 .headings p {
 }
 body .layout .part-2 .headings h2 {
   font-size: 3rem;
+}
+body .layout .part-2 .writings .fist .fistp {
+  color: var(--Dark-grayish-blue);
+  width: 90%;
+  font-size: 1.2rem;
+}
+body .layout .part-2 .writings .lot .price {
+  font-weight: bolder;
+  font-size: 1.65rem;
 }/*# sourceMappingURL=style.css.map */
