@@ -1,0 +1,126 @@
+* {
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kumbh Sans;
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.3rem 4rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 0.09rem solid var(--Dark-grayish-blue);
+    .nav-1 {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        display: block;
+        padding-left: 2rem;
+      }
+      .linksto {
+        display: flex;
+        flex-direction: row;
+        padding-left: 2rem;
+        a {
+          text-align: center;
+          text-decoration: none;
+          padding: 2rem;
+          color: var(--Dark-grayish-blue);
+        }
+        a:hover {
+          border-bottom: 0.2rem solid var(--Orange);
+        }
+      }
+    }
+    .nav-2 {
+      display: flex;
+      align-items: center;
+      .cart {
+        margin: 0 2.3rem;
+      }
+
+      .avatar {
+        height: 3rem;
+      }
+      .avatar:hover {
+        border: 0.2rem solid var(--Orange);
+        border-radius: 50%;
+      }
+    }
+  }
+  .layout {
+    display: flex;
+    margin: 7rem 6rem;
+    justify-content: space-evenly;
+
+    .part-1 {
+      display: flex;
+      flex-direction: column;
+      margin-right: 4rem;
+      .main {
+        .main-image {
+          height: 40rem;
+          width: 40rem;
+          border-radius: 2rem;
+        }
+      }
+      .othermarkets {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 40rem;
+        .markets {
+          height: 8rem;
+          border-radius: 1.2rem;
+        }
+        .markets:hover {
+          background: blue;
+          opacity: 0.6;
+          filter: alpha(opacity=30);
+        }
+        .active-1 {
+          border: 0.2rem solid var(--Orange);
+          color: var(--Pale-orange);
+          background: blue;
+          opacity: 0.7;
+          filter: alpha(opacity=30);
+        }
+      
+      }
+    }
+    .part-2 {
+      display: flex;
+      flex-direction: column;
+      margin: 4rem 0 0 1rem;
+      width: 40%;
+
+      .headings {
+        p {
+          color: var(--Orange);
+          font-size: 1rem;
+          font-weight: bolder;
+          text-transform: uppercase;
+        }
+        h2{
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
