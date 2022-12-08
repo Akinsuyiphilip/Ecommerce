@@ -13,6 +13,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Kumbh Sans;
+  position: relative;
+  width: auto;
 }
 body .navbar {
   display: flex;
@@ -121,7 +123,147 @@ body .layout .part-2 .writings .fist .fistp {
   width: 90%;
   font-size: 1.2rem;
 }
+body .layout .part-2 .writings .lot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
 body .layout .part-2 .writings .lot .price {
   font-weight: bolder;
   font-size: 1.65rem;
+  margin-right: 1rem;
+}
+body .layout .part-2 .writings .lot .slashprice {
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  color: var(--Orange);
+  background-color: var(--Pale-orange);
+}
+body .layout .part-2 .writings .strikedPrice {
+  color: var(--Dark-grayish-blue);
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+body .layout .part-2 .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5rem;
+}
+body .layout .part-2 .buttons .signs {
+  display: flex;
+  width: 40%;
+  background-color: var(--Light-grayish-blue);
+  justify-content: space-evenly;
+  border-radius: 0.7rem;
+  align-items: center;
+  margin-right: 2rem;
+}
+body .layout .part-2 .buttons .signs .mathSign {
+  width: 1rem;
+  align-items: center;
+  text-align: center;
+}
+body .layout .part-2 .buttons .signs .mathSign:hover {
+  background: var(--Pale-orange);
+  opacity: 0.9;
+  filter: alpha(opacity=30);
+}
+body .layout .part-2 .buttons .signs .quantity {
+  font-weight: bolder;
+}
+body .layout .part-2 .buttons .addTocart {
+  display: flex;
+  align-items: center;
+}
+body .layout .part-2 .buttons .addTocart a {
+  width: 70%;
+  background-color: var(--Orange);
+  padding: 1rem 5rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: -1px 28px 50px 0px rgba(255, 125, 26, 0.47);
+}
+body .layout .part-2 .buttons .addTocart a img {
+  margin-right: 1rem;
+  height: 1rem;
+}
+body .layout .part-2 .buttons .addTocart a:hover {
+  color: var(--Pale-orange);
+  opacity: 0.5;
+  filter: alpha(opacity=30);
+}
+body .modalPanel {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: hsla(217deg, 9%, 45%, 0.676);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+body .modalPanel .absoluteModal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+body .modalPanel .absoluteModal .modal .modal-image {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 2rem;
+}
+body .modalPanel .absoluteModal .othermodal {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+}
+body .modalPanel .absoluteModal .othermodal .Modals {
+  height: 6rem;
+  border-radius: 1rem;
+}
+body .modalPanel .absoluteModal .othermodal .active-modal {
+  border: 0.2rem solid var(--Orange);
+  color: var(--Pale-orange);
+  background: rgba(49, 49, 51, 0.612);
+  filter: alpha(opacity=30);
+}
+body .modalPanel .closeBtn {
+  position: relative;
+}
+body .modalPanel .closeBtn img {
+  position: absolute;
+  top: 5rem;
+  right: -25rem;
+  height: 1.5rem;
+}
+body .modalPanel .arrows {
+  position: relative;
+}
+body .modalPanel .arrows .prevBtn {
+  position: absolute;
+  top: 40%;
+  left: -26.5rem;
+  padding: 1rem 1.1rem;
+  background-color: white;
+  border-radius: 100%;
+  height: 1rem;
+}
+body .modalPanel .arrows .nextBtn {
+  position: absolute;
+  top: 40%;
+  right: -1.3rem;
+  padding: 1rem 1.1rem;
+  background-color: white;
+  border-radius: 100%;
+  height: 1rem;
 }/*# sourceMappingURL=style.css.map */
